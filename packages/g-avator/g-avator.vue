@@ -7,7 +7,16 @@
 <script>
 	export default {
 		name: 'g-avator',
-		props: ['name', 'headImg'],
+		props: {
+			name:  {
+				type: String,
+				required: true
+			},
+			headImg: {
+				type: String,
+				required: true
+			}
+		},
 		data(){
 			return{
 			}

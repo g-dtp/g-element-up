@@ -5,11 +5,7 @@
 			span(class="el-dropdown-link") 下拉菜单
 				i(class="el-icon-arrow-down el-icon--right")
 			el-dropdown-menu(slot="dropdown")
-				el-dropdown-item 黄金糕
-				el-dropdown-item 狮子头
-				el-dropdown-item 螺蛳粉
-				el-dropdown-item 双皮奶
-				el-dropdown-item 蚵仔煎
+				el-dropdown-item(v-for="(dm,index) in dropDownDatas" :key="index") {{dm}}
 </template>
 
 <script>
@@ -21,14 +17,23 @@
 	Vue.use(DropdownItem)
 	export default {
 		name: 'g-dropdown',
+		props: {
+			dropDownDatas:  {
+				default: function () {
+					return []
+				}
+			}
+		},
 		data() {
-			return{
+			return {
 			}
 		}
 	}
 </script>
 <style lang="sass" scoped>
 .g-dropdown
+	display: flex
+	align-items: center
 	.avator
 		background: url('~img/logo-bg.png') no-repeat;
 		background-size: cover;

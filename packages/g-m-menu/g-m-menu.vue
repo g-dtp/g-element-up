@@ -49,8 +49,9 @@
 		color: rgba(255, 255, 255, 0.45);
 		background: #010
 		height: 100vh
-		position: absolute;
+		position: absolute
 		left: 0px
+		transition: all .2s
 		.collapse-item
 			display: flex;
 			align-items: center;

@@ -51,6 +51,7 @@
 		color: rgba(255, 255, 255, 0.45);
 		background: #010
 		height: 100vh
+		transition: all .2s
 		.logo
 			height: 64px;
 			position: absolute;
