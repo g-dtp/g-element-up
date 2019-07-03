@@ -19,17 +19,18 @@
 </template>
 
 <script>
-import GIcon from 'packages/g-icon'
-import {GMenu, GMMenu, GSearch, GAvator, GDropdown, GLogo, GMSearch} from 'packages/index'
+import GIcon from '../../packages/g-icon'
+import {GMenu, GMMenu, GSearch, GAvator, GDropdown, GLogo, GMSearch} from '../../packages/index'
 // import MenuConfig from 'packages/g-menu/config.js'
-import MenuConfig from 'packages/g-menu/config2.js'
+import MenuConfig from '../../packages/g-menu/config2.js'
+import img from '../assets/img/logo-bg.png'
 export default {
 	name: "index",
 	components: {GMenu, GMMenu, GSearch, GAvator, GDropdown, GLogo, GIcon, GMSearch},
 	data() {
 		return {
 			text: 'GDMA',
-			logoBg: '../../static/img/logo-bg.png',
+			logoBg: img,
 			dropDownData: ["退出", "边栏"]
 		}
 	},
@@ -112,7 +113,7 @@ export default {
 		align-items: center
 		justify-content: center
 		color: #fff
-		background: url('~img/logo-bg.png') no-repeat
+		background: url('../assets/img/logo-bg.png') no-repeat
 		background-size: cover
 		text-align: center
 		.g-m-search

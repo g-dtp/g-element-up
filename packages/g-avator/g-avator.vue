@@ -28,7 +28,7 @@
 	display: flex
 	align-items: center
 	.avator
-		background: url('~img/logo-bg.png') no-repeat
+		background: url('../../examples/assets/logo.png') no-repeat;
 		background-size: cover
 		width: 24px
 		height: 24px
